@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AR Architecture Model</title>
+  <!-- Google Model Viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body { margin: 0; background: #f0f0f0; }
+    model-viewer {
+      width: 100%;
+      height: 100vh;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Change model.glb to the exact name of your converted file -->
+  <model-viewer src="model.glb" ar ar-modes="scene-viewer quick-look webxr"
+                camera-controls environment-image="neutral"
+                shadow-intensity="1">
+  </model-viewer>
+</body>
+</html>
